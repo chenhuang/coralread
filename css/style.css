@@ -1,0 +1,34 @@
+body {
+    margin: 0 auto;
+    background: #f0f0f0;
+}
+
+nav {
+    right: 0;
+    width: 100%;
+    background: #ffffff;
+}
+
+#content {
+    display: table;
+}
+
+#unread-content {
+    display: table-cell;
+    width: 310px;
+}
+
+#read-content {
+    display: table-cell;
+    width: 310px;
+}
+
+#status {
+    display: table-cell;
+    width: 300px;
+}
+
+
+header, footer, nav, article { 
+    display: block;
+}
