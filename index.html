@@ -4,7 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Coralread</title>
 
-<link type="text/css" href="file://localhost/Users/chhuang/weibo_redesign/web/coralread/css/style.css" rel="stylesheet">
+<link type="text/css" href="/css/style.css" rel="stylesheet">
+<script type="text/javascript" src="/lib/jquery.js"></script>
+<script type="text/javascript" src="/lib/inter.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+        load_json()
+    })
+
+</script>
 </head>
 <body>
 <header></header>
@@ -15,15 +23,9 @@
 </nav>
 <div id="content">
 <section id="unread-content">
-<article>
-<p>Message 1</p>
-</article>
 </section>
 
 <section id="read-content">
-<article>
-<p>Message 2</p>
-</article>
 </section>
 
 <section id="status">
@@ -31,6 +33,7 @@
 <li>User1</li>
 <li><a href="#">72<br />Tweets</a></li>
 <li><a href="#">122<br />Following</a></li>
+
 <li><a href="#">44<br />Followers</a></li>
 </ul>
 </section>
