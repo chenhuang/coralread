@@ -14,19 +14,22 @@ nav {
 }
 
 section.unread-content {
-    width: 410px;
+    width: 310px;
     height: 500px;
+    /*overflow:scroll;*/
+    display: table-cell;
 }
 
 section.read-content {
-    width: 410px;
+    width: 310px;
     height: 500px;
-    padding: 20px
+    /*overflow:scroll;*/
+    display: table-cell;
 }
 
 #status {
     display: table-cell;
-    width: 200px;
+    width: 300px;
 }
 
 #input-box {
@@ -56,7 +59,6 @@ div.send-button-open {
 
 header, footer, nav, article {
     display: block;
-    font-size: 12px; font-family: Tahoma, 宋体; word-wrap: break-word; line-height: 18px; overflow-y: auto; overflow-x: hidden; outline: none; 
 }
 
 a.button {
@@ -65,13 +67,5 @@ a.button {
     bottom: 20px;
 }
 
-/*Style for individual conversations*/
-article.style {
-    
-    
-}
 
-i.vline {
-    margin:0 8px;
-}
 
