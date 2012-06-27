@@ -36,7 +36,7 @@ section.read-content {
 #input-area {
     display: table-cell;
     height: 55px; 
-    width: 550px; 
+    width: 800px; 
     margin: 0px; padding: 0px; border: 0px none rgb(0, 0, 0); 
     font-size: 14px; font-family: Tahoma, 宋体; word-wrap: break-word; line-height: 18px; overflow-y: auto; overflow-x: hidden; outline: none; 
 }
