@@ -1,12 +1,14 @@
 body {
-    margin: 0 auto;
+    margin: 4px auto;
     background: #f0f0f0;
 }
 
 nav {
-    right: 0;
+    position: absolute
+    right: 0px;
     width: 100%;
     background: #ffffff;
+    font-size: 12px; font-family: Tahoma, 宋体; word-wrap: break-word; line-height: 18px; overflow-y: auto; overflow-x: hidden; outline: none; 
 }
 
 #content {
@@ -54,15 +56,22 @@ div.send-button-open {
     background-color: #007777;
 }
 
-header, footer, nav, article {
+header, footer, article{
     display: block;
     font-size: 12px; font-family: Tahoma, 宋体; word-wrap: break-word; line-height: 18px; overflow-y: auto; overflow-x: hidden; outline: none; 
+    list-style-type:none;
 }
 
 a.button {
     padding:10px 10px 10px 10px; 
     position: relative; 
     bottom: 20px;
+}
+
+ul {
+display: inline;
+list-style-type: none;
+padding-right: 20px;
 }
 
 /*Style for individual conversations*/
