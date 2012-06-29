@@ -1,6 +1,13 @@
 body {
     margin: 4px auto;
     background: #f0f0f0;
+    font-size: 12px; font-family: Tahoma, 宋体; word-wrap: break-word; line-height: 18px; overflow-y: auto; overflow-x: hidden; outline: none; 
+}
+
+h2 {
+    padding:0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 14px; font-family: Tahoma, 宋体; word-wrap: break-word; line-height: 18px; overflow-y: auto; overflow-x: hidden; outline: none; 
 }
 
 nav {
@@ -18,12 +25,13 @@ nav {
 section.unread-content {
     width: 410px;
     height: 500px;
+    padding: 5px;
 }
 
 section.read-content {
     width: 410px;
     height: 500px;
-    padding: 20px
+    padding: 5px;
 }
 
 #status {
@@ -58,7 +66,6 @@ div.send-button-open {
 
 header, footer, article{
     display: block;
-    font-size: 12px; font-family: Tahoma, 宋体; word-wrap: break-word; line-height: 18px; overflow-y: auto; overflow-x: hidden; outline: none; 
     list-style-type:none;
 }
 

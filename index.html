@@ -5,9 +5,9 @@
 <script src=" http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=3168919025" type="text/javascript" charset="utf-8"></script>
 <title>Coralread</title>
 
-<link type="text/css" href="/css/style.css" rel="stylesheet">
-<script type="text/javascript" src="/lib/jquery.js"></script>
-<script type="text/javascript" src="/lib/inter.js"></script>
+<link type="text/css" href="./css/style.css" rel="stylesheet">
+<script type="text/javascript" src="./lib/jquery.js"></script>
+<script type="text/javascript" src="./lib/inter.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
         load_json();
@@ -29,14 +29,27 @@ $(document).ready(function() {
 <a tabindex="2" href="javascript:void(0);" class="button" title="发布微博按钮">Compose</a>
 </div>
 </div>
+<nav>
+<a href="index.html">All</a> 
+<i class="vline">|</i>
+<a href="index.html">Friends</a>
+<i class="vline">|</i>
+<a href="index.html">Colleguges</a>
+<i class="vline">|</i>
+<a href="index.html">Others</a>
+</nav>
 <div id="content">
 <div style="display:table-cell; overflow:scroll">
+<h2 style="text-align:center">Unread Messages</h2>
 <section id="unread-content">
+<div style="text-align:center"><a href="javascript:void(0);" class="hide_show">Hide column</a></div>
 </section>
 </div>
 
 <div style="display:table-cell; overflow:scroll">
+<h2 style="text-align:center">Read Messages</h2>
 <section id="read-content">
+<div style="text-align:center"><a href="javascript:void(0);" class="hide_show">Hide column</a></div>
 </section>
 </div>
 
