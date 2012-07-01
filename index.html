@@ -1,69 +1,100 @@
-<!doctype html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<script src=" http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=3168919025" type="text/javascript" charset="utf-8"></script>
-<title>Coralread</title>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Chen Huang, chen.huang.cn@gmail.com">
 
-<link type="text/css" href="./css/style.css" rel="stylesheet">
-<script type="text/javascript" src="./lib/jquery.js"></script>
-<script type="text/javascript" src="./lib/inter.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-        load_json();
-        add_events();
-    });
-</script>
-</head>
-<body>
-<nav >
-<a href="index.html">Home</a> 
-<i class="vline">|</i>
-<a href="logout.html">Logout</a>
-</nav>
-<div id="input-box">
-<div>
-<textarea id="input-area" tabindex="1" title="微博输入框" name="" node-type="textEl"></textarea>
-</div>
-<div id="send-button" class="send-button-open">
-<a tabindex="2" href="javascript:void(0);" class="button" title="发布微博按钮">Compose</a>
-</div>
-</div>
-<nav>
-<a href="index.html">All</a> 
-<i class="vline">|</i>
-<a href="index.html">Friends</a>
-<i class="vline">|</i>
-<a href="index.html">Colleguges</a>
-<i class="vline">|</i>
-<a href="index.html">Others</a>
-</nav>
-<div id="content">
-<div style="display:table-cell; overflow:scroll">
-<h2 style="text-align:center">Unread Messages</h2>
-<section id="unread-content">
-<div style="text-align:center"><a href="javascript:void(0);" class="hide_show">Hide column</a></div>
-</section>
-</div>
+        <script src=" http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=3168919025" type="text/javascript" charset="utf-8"></script>
+        <link type="text/css" href="./css/style.css" rel="stylesheet">
+        <style type="text/css">
+                body {
+                    padding-top: 60px;
+                    padding-bottom: 10px;
+                }
+        </style>
+        <script src="../bootstrap/js/jquery.js"></script> <!-- So it's still a need to load jquery -->
+        <script src="../bootstrap/js/bootstrap-transition.js"></script>
+        <script src="../bootstrap/js/bootstrap-alert.js"></script>
+        <script src="../bootstrap/js/bootstrap-modal.js"></script>
+        <script src="../bootstrap/js/bootstrap-dropdown.js"></script>
+        <script src="../bootstrap/js/bootstrap-scrollspy.js"></script>
+        <script src="../bootstrap/js/bootstrap-tab.js"></script>
+        <script src="../bootstrap/js/bootstrap-tooltip.js"></script>
+        <script src="../bootstrap/js/bootstrap-popover.js"></script>
+        <script src="../bootstrap/js/bootstrap-button.js"></script>
+        <!--<script src="../bootstrap/js/bootstrap-collapse.js"></script>-->
+        <script src="../bootstrap/js/bootstrap-carousel.js"></script>
+        <script src="../bootstrap/js/bootstrap-typeahead.js"></script>
+        <script type="text/javascript" src="./lib/inter.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                load_json();
+                add_events();
+                });
+        </script>
 
-<div style="display:table-cell; overflow:scroll">
-<h2 style="text-align:center">Read Messages</h2>
-<section id="read-content">
-<div style="text-align:center"><a href="javascript:void(0);" class="hide_show">Hide column</a></div>
-</section>
-</div>
+        <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+        <title>Coralread</title>
+    </head>
+    <body>
+    <div class="navbar navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+              <div class="nav-collapse">
+                <ul class="nav pull-right">
+                  <li class="active"><a href="index.html" data-bitly-type="bitly_hover_card">Home</a></li>
+                  <li><a href="logout.html" data-bitly-type="bitly_hover_card">Logout</a></li>
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div>
+          </div>
+        </div>
 
-<section id="status">
-<ul >
-<li>User1</li>
-<li><a href="owntweets.html">200<br />Tweets</a></li>
-<li><a href="following.html">122<br />Following</a></li>
-<li><a href="follower.html">44<br />Followers</a></li>
-</ul>
-</section>
-
-</div>
-<footer>
-</footer>
-</body>
+        <div class="container">
+            <div class="row">
+                <div class="span8">
+                    <div class="row">
+                        <form class="well form-inline">
+                            <textarea id="input-area" title="微博输入框" name="" placeholder="Compose new Tweet..."></textarea>
+                            <div class="pull-right">
+                            <button type="submit" id="send-button" class="btn btn-success">Compose</button>
+                            </div>
+                        </form>
+                        <div class="span4">
+                            <div class="row">
+                                <section id="unread-content">
+                                </section>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="row">
+                                <section id="read-content">
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="nav-collapse">
+                                <ul class="nav pull-left">
+                                    <li>200 </br> Tweets</li>
+                                    <li class="divider-vertical"></li>
+                                    <li>200 </br> Following</li>
+                                    <li class="divider-vertical"></li>
+                                    <li>300 </br> Follower</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </body>
 </html>

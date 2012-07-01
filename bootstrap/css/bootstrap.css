@@ -296,6 +296,16 @@ a:hover {
   margin-left: 100px;
 }
 
+/*Added by Chen Huang*/
+.offset_05 {
+  margin-left: 60px;
+}
+
+/*Added by Chen Huang*/
+.offset1_05 {
+  margin-left: 140px;
+}
+
 .row-fluid {
   width: 100%;
   *zoom: 1;
