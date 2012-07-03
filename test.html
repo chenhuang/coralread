@@ -65,5 +65,41 @@ created_at
 <script>$(".myClass").css("border","3px solid red");</script>
 <script>$(".myClass").click(function(event){alert("test");});</script>
 
+<article class="row">
+    <section class="span1">
+        "<img style=\"vertical-align:text-top;\" src=\""+data["user"]["profile_image_url"]+"\" />"
+    </section>
+    <section class="span3">
+        data["text"]
+        <div class="row">
+            <div class="span1">
+                data["created_at"]
+            </div>
+            <div class="span2">
+                <a class=\"repost\" href=\"javascript:void(0);\">Repost</a><i class=\"vline\">|</i>
+                <a class=\"comment\" href=\"javascript:void(0);\">Comment</a><i class=\"vline\">|</i>
+                <a class=\"forward\" href=\"javascript:void(0);\">Forward</a>
+                <i class=\"vline\">|</i><a class=\"archive\" href=\"javascript:void(0);\">Archive</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+'
+<form class="form-horizontal">
+    <fieldset>
+        <div class="control-group">
+            <div class="controls">
+                <input type="text" class="forward_address input-medium" placeholder="Email">
+            </div>
+            <div class="controls">
+                <textarea type="text" class="forward_content input-medium" placeholder="Content">
+            </div>
+        </div>
+    </fieldset>
+</form>
+'
+
+
 </body>
 </html>
