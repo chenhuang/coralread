@@ -1,17 +1,25 @@
 <html xmlns:wb="http://open.weibo.com/wb">
 <head>
 <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=214377719" type="text/javascript" charset="utf-8"></script>
+<script>
+	WB2.anyWhere(function(W){
+		W.widget.connectButton({
+			id: "wb_connect_btn",	
+			type:'1,4',
+			callback : {
+				login:function(o){	//登录后的回调函数
+					alert("login: "+o.screen_name)	
+				},
+				logout:function(){	//退出后的回调函数
+					alert('logout');
+				}
+			}
+		});
+	});
+</script>
 </head>
 <body>
-<wb:login-button type="1,1" onlogin="login" onlogout="logout"></wb:login-button>
-<div>
-Username: 
-<input value="user1"></input>
+<div id="wb_connect_btn">
 </div>
-<div>
-Password:
-<input value="*****"></input>
-</div>
-<a href="index.html">Login</a>
 <body>
 </html>

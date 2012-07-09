@@ -7,9 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="Chen Huang, chen.huang.cn@gmail.com">
 
-        <!--
-        <script src=" http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=3168919025" type="text/javascript" charset="utf-8"></script>
-        -->
+        <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=214377719" type="text/javascript" charset="utf-8"></script>
 
         <link type="text/css" href="./css/style.css" rel="stylesheet">
         <style type="text/css">
@@ -39,6 +37,23 @@
         <script src="./bootstrap/js/bootstrap-typeahead.js"></script>
         <script src="./lib/inter.js"></script>
         <script type="text/javascript">
+
+       	WB2.anyWhere(function(W){
+		W.widget.connectButton({
+			id: "wb_connect_btn",	
+			type:'2,2',
+			callback : {
+				login:function(o){	//登录后的回调函数
+;
+                    },
+				logout:function(){	//退出后的回调函数
+					alert('logout');
+                    }
+                }
+            });
+        });
+ 
+
             $(document).ready(function() {
                 load_json();
                 add_events();
@@ -55,7 +70,7 @@
               <div class="nav-collapse">
                 <ul class="nav pull-right">
                   <li class="active"><a href="index.html" data-bitly-type="bitly_hover_card">Home</a></li>
-                  <li><a href="logout.html" data-bitly-type="bitly_hover_card">Logout</a></li>
+                  <li><div id ="wb_connect_btn" data-bitly-type="bitly_hover_card"></div></li>
                 </ul>
               </div><!--/.nav-collapse -->
             </div>
